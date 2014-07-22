@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		35171AEAA1544BF3B2920CB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A2CF0B185B4640AE214723 /* Images.xcassets */; };
-		75444549BE2F4B6080B9A89A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A0C10C25AE47B3B5EE2A4E /* Foundation.framework */; };
 		9AA5C88EB3924EBAA796EFE3 /* bcaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F9A039646417280113EA3 /* bcaAppDelegate.m */; };
 		A3833079E90B49109C6F9143 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F07EC822AC4515AF3AD26B /* libPods-unit_tests.a */; };
 		E0B3A64655A24F3A8F86B3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64195D9788384458BDE5FFB3 /* main.m */; };
+		E32BC3E519785A0D00F95449 /* MainStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32BC3E419785A0D00F95449 /* MainStoryboardViewController.m */; };
+		E35540AA19784E8800C0EFBA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35540A919784E8800C0EFBA /* MainStoryboard.storyboard */; };
+		E35B777F197EC5E6005813EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35B777E197EC5E6005813EA /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		2CE7519335C24B14B4712ED9 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
-		37A0C10C25AE47B3B5EE2A4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3E72DBC5E72C49BE96BF1176 /* bcaAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bcaAppDelegate.h; sourceTree = "<group>"; };
 		40333EDDDA484AA395CFE37B /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		64195D9788384458BDE5FFB3 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +39,10 @@
 		C731F61E30184ECCA66B633B /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
 		CFF30F870C844AF4B5EDDB53 /* bleCam-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "bleCam-Prefix.pch"; sourceTree = "<group>"; };
 		DCFB3CC125A14F00BE46179E /* bleCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bleCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32BC3E319785A0D00F95449 /* MainStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainStoryboardViewController.h; path = ../Controllers/MainStoryboardViewController.h; sourceTree = "<group>"; };
+		E32BC3E419785A0D00F95449 /* MainStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainStoryboardViewController.m; path = ../Controllers/MainStoryboardViewController.m; sourceTree = "<group>"; };
+		E35540A919784E8800C0EFBA /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../../Classes/Views/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E35B777E197EC5E6005813EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75444549BE2F4B6080B9A89A /* Foundation.framework in Frameworks */,
+				E35B777F197EC5E6005813EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +100,7 @@
 		1CD028FEB4AA49958C8E3858 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				37A0C10C25AE47B3B5EE2A4E /* Foundation.framework */,
+				E35B777E197EC5E6005813EA /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 		45C5E2631F7C41C59F787505 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				E35540A919784E8800C0EFBA /* MainStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 		AAC9BA570EED4CB2AB4F50CD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E32BC3E719785ACF00F95449 /* mainViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +231,15 @@
 				4BD68DF052224CE0B6E83CDF /* Other-Sources */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E32BC3E719785ACF00F95449 /* mainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E32BC3E319785A0D00F95449 /* MainStoryboardViewController.h */,
+				E32BC3E419785A0D00F95449 /* MainStoryboardViewController.m */,
+			);
+			name = mainViewController;
 			sourceTree = "<group>";
 		};
 		E36D5B690C1C461CBB4B0728 /* Controllers */ = {
@@ -292,6 +308,11 @@
 				CLASSPREFIX = bca;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = alejandro.garcia;
+				TargetAttributes = {
+					83376ABE167445B5BEC400B2 = {
+						DevelopmentTeam = 32SK7JQUP8;
+					};
+				};
 			};
 			buildConfigurationList = E1F88A5EAA7D4AB3B6BFEB08 /* Build configuration list for PBXProject "bleCam" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -316,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35540AA19784E8800C0EFBA /* MainStoryboard.storyboard in Resources */,
 				35171AEAA1544BF3B2920CB7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32BC3E519785A0D00F95449 /* MainStoryboardViewController.m in Sources */,
 				9AA5C88EB3924EBAA796EFE3 /* bcaAppDelegate.m in Sources */,
 				E0B3A64655A24F3A8F86B3DA /* main.m in Sources */,
 			);
@@ -550,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -579,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
