@@ -10,9 +10,14 @@
 
 @interface MainStoryboardViewController ()
 
+
+
 @end
 
 @implementation MainStoryboardViewController
+
+@synthesize d;
+@synthesize sensorsEnabled;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,12 +34,43 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillDisappear:(BOOL)animated {
+    [self deconfigureSensorTag];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void) configureSensorTag
+{
+    // Configure sensortag, turning on Sensors and setting update period for sensors etc ...
+
+}
+
+-(void) deconfigureSensorTag {
+    
+}
+
+-(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+    
+}
+
+-(bool)sensorEnabled:(NSString *)Sensor
+{
+    NSString *val = [self.d.setupData valueForKey:Sensor];
+    if (val)
+    {
+        if ([val isEqualToString:@"1"])
+        {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+    
 /*
 #pragma mark - Navigation
 

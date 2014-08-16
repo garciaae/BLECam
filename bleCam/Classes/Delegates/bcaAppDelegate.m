@@ -7,6 +7,7 @@
 //
 
 #import "bcaAppDelegate.h"
+#import "deviceSelectorViewController.h"
 
 @implementation bcaAppDelegate
 
