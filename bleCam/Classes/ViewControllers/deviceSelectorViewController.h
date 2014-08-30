@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import "BLEDevice.h"
-#import "BLEUtility.h"
-#import "MainStoryBoardViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "AVCamPreviewView.h"
+//#import "BLEDevice.h"
+//#import "BLEUtility.h"
+
+static void * CapturingStillImageContext = &CapturingStillImageContext;
+static void * RecordingContext = &RecordingContext;
+static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDeviceAuthorizedContext;
 
 
-@interface deviceSelectorViewController : UIViewController<CBCentralManagerDelegate,CBPeripheralDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface deviceSelectorViewController : UIViewController<CBCentralManagerDelegate,CBPeripheralDelegate,AVCaptureFileOutputRecordingDelegate>
 
 // Says if it's connected
 @property (nonatomic, strong) NSString *connected;
@@ -28,15 +33,34 @@
 // An array to store different sensor tags
 @property (strong,nonatomic) NSMutableArray *sensorTags;
 
-// A method to configure the sensor tag
--(NSMutableDictionary *) makeSensorTagConfiguration;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
-//@property (strong,nonatomic) BLEDevice *d;
+// An array to store which sensors are enabled
 @property NSMutableArray *sensorsEnabled;
 
--(void) configureSensorTag;
--(void) deconfigureSensorTag;
+// A control to set the bluetooth mark
+@property (weak, nonatomic) IBOutlet UIImageView *bluetoothMark;
 
+// A button for manually taka a picture
+- (IBAction)snapStillImage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *captureButton;
+
+// A control to preview the camera
+@property (weak, nonatomic) IBOutlet AVCamPreviewView *previewView;
+
+// A button to switch between front and rear cameras
+- (IBAction)frontRearCam:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *changeCamera;
+
+// Session management.
+@property (nonatomic) dispatch_queue_t sessionQueue; // Communicate with the session and other session objects on this queue.
+@property (nonatomic) AVCaptureSession *session;
+@property (nonatomic) AVCaptureDeviceInput *videoDeviceInput;
+@property (nonatomic) AVCaptureMovieFileOutput *movieFileOutput;
+@property (nonatomic) AVCaptureStillImageOutput *stillImageOutput;
+
+// Utilities.
+@property (nonatomic) UIBackgroundTaskIdentifier backgroundRecordingID;
+@property (nonatomic, getter = isDeviceAuthorized) BOOL deviceAuthorized;
+@property (nonatomic, readonly, getter = isSessionRunningAndDeviceAuthorized) BOOL sessionRunningAndDeviceAuthorized;
+@property (nonatomic) BOOL lockInterfaceRotation;
+@property (nonatomic) id runtimeErrorHandlingObserver;
 @end

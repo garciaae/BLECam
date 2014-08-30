@@ -113,18 +113,18 @@
 +(float) calcXValue:(NSData *)data {
     char scratchVal[3];
     [data getBytes:&scratchVal length:3];
-    return ((scratchVal[0] * 1.0) / (256 / KXTJ9_RANGE));
+    return (float)((scratchVal[0] * 1.0) / (256 / KXTJ9_RANGE));
 }
 +(float) calcYValue:(NSData *)data {
     //Orientation of sensor on board means we need to swap Y (multiplying with -1)
     char scratchVal[3];
     [data getBytes:&scratchVal length:3];
-    return ((scratchVal[1] * 1.0) / (256 / KXTJ9_RANGE)) * -1;
+    return (float)((scratchVal[1] * 1.0) / (256 / KXTJ9_RANGE)) * -1;
 }
 +(float) calcZValue:(NSData *)data {
     char scratchVal[3];
     [data getBytes:&scratchVal length:3];
-    return ((scratchVal[2] * 1.0) / (256 / KXTJ9_RANGE));
+    return (float)((scratchVal[2] * 1.0) / (256 / KXTJ9_RANGE));
 }
 +(float) getRange {
     return KXTJ9_RANGE;
@@ -176,7 +176,7 @@
     char scratchVal[6];
     [data getBytes:&scratchVal length:6];
     int16_t rawZ = (int16_t)(scratchVal[4] & 0xff) | ((scratchVal[5] << 8) & 0xff00);
-    self.lastZ =  ((float)rawZ * 1.0) / ( 65536 / MAG3110_RANGE );
+    self.lastZ =  (float)((float)rawZ * 1.0) /(float) ( 65536 / MAG3110_RANGE );
     return (self.lastZ - self.calZ);
 }
 +(float) getRange {

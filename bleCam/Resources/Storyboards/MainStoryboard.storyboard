@@ -13,55 +13,67 @@
                         <viewControllerLayoutGuide type="bottom" id="aIU-LH-9fO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dFz-DT-rzD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sgY-rW-Z0M">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Cbk-dw-FIV" detailTextLabel="Adj-gB-Nqd" style="IBUITableViewCellStyleSubtitle" id="NAy-Kk-vr4">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NAy-Kk-vr4" id="qTF-y0-n6h">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cbk-dw-FIV">
-                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Adj-gB-Nqd">
-                                                    <rect key="frame" x="15" y="25" width="32" height="15"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="iTE-Ph-7CJ" id="l35-9e-CTM"/>
-                                    <outlet property="delegate" destination="iTE-Ph-7CJ" id="W6f-F6-r8i"/>
-                                </connections>
-                            </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-85-Ktl">
-                                <rect key="frame" x="0.0" y="131" width="320" height="349"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-g.png" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-HS-Euq">
+                                <rect key="frame" x="11" y="535" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-RI-lVG">
+                                <rect key="frame" x="43" y="532" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="zvd-A4-oTi"/>
+                                </constraints>
+                                <state key="normal" title="Capture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="snapStillImage:" destination="iTE-Ph-7CJ" eventType="touchUpInside" id="Byr-AB-fuQ"/>
+                                    <action selector="useCamera:" destination="iTE-Ph-7CJ" eventType="touchUpInside" id="Vap-YE-azJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-3W-Uln" customClass="AVCamPreviewView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-sB-RlD">
+                                <rect key="frame" x="238" y="532" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="0TT-44-U7f"/>
+                                </constraints>
+                                <state key="normal" title="F/R Cam">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="frontRearCam:" destination="iTE-Ph-7CJ" eventType="touchUpInside" id="Kk9-1u-Ci5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ib3-HS-Euq" firstAttribute="leading" secondItem="dFz-DT-rzD" secondAttribute="leading" constant="11" id="9No-PD-CQ0"/>
+                            <constraint firstItem="u7K-3W-Uln" firstAttribute="leading" secondItem="dFz-DT-rzD" secondAttribute="leading" id="BEh-c6-I1O"/>
+                            <constraint firstAttribute="trailing" secondItem="u7K-3W-Uln" secondAttribute="trailing" id="D92-Id-4o3"/>
+                            <constraint firstItem="WA3-sB-RlD" firstAttribute="centerY" secondItem="ib3-HS-Euq" secondAttribute="centerY" id="J8o-OH-w0Y"/>
+                            <constraint firstAttribute="bottom" secondItem="u7K-3W-Uln" secondAttribute="bottom" constant="41" id="Ky1-At-g2J"/>
+                            <constraint firstItem="WA3-sB-RlD" firstAttribute="baseline" secondItem="EVK-RI-lVG" secondAttribute="baseline" id="WnU-EC-D3t"/>
+                            <constraint firstItem="u7K-3W-Uln" firstAttribute="top" secondItem="PQ4-Sl-nHW" secondAttribute="bottom" constant="-64" id="YeN-Fd-lcF"/>
+                            <constraint firstAttribute="trailing" secondItem="WA3-sB-RlD" secondAttribute="trailing" constant="20" symbolic="YES" id="Z1X-i6-fii"/>
+                            <constraint firstItem="aIU-LH-9fO" firstAttribute="top" secondItem="ib3-HS-Euq" secondAttribute="bottom" constant="9" id="sUW-gZ-bwb"/>
+                            <constraint firstItem="EVK-RI-lVG" firstAttribute="leading" secondItem="ib3-HS-Euq" secondAttribute="trailing" constant="8" symbolic="YES" id="zC5-6R-Utn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kvT-p0-OkC"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="ffZ-85-Ktl" id="mVF-wA-uBg"/>
-                        <outlet property="tableView" destination="sgY-rW-Z0M" id="C9U-Ct-X0W"/>
+                        <outlet property="bluetoothMark" destination="ib3-HS-Euq" id="uVY-au-8tu"/>
+                        <outlet property="captureButton" destination="EVK-RI-lVG" id="LrN-tY-BbZ"/>
+                        <outlet property="changeCamera" destination="WA3-sB-RlD" id="E3E-Zh-Wyv"/>
+                        <outlet property="previewView" destination="u7K-3W-Uln" id="89v-Cf-GwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXe-ug-ofV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,9 +99,12 @@
             <point key="canvasLocation" x="2309" y="649"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bluetooth-g.png" width="24" height="24"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

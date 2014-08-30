@@ -12,13 +12,13 @@
 		A3833079E90B49109C6F9143 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F07EC822AC4515AF3AD26B /* libPods-unit_tests.a */; };
 		E0B3A64655A24F3A8F86B3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64195D9788384458BDE5FFB3 /* main.m */; };
 		E31378B5197ECA4F00897C83 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31378B4197ECA4F00897C83 /* MainStoryboard.storyboard */; };
-		E32BC3E519785A0D00F95449 /* MainStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32BC3E419785A0D00F95449 /* MainStoryboardViewController.m */; };
 		E344D7EF198EC27D00D2944D /* deviceSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E344D7EE198EC27D00D2944D /* deviceSelectorViewController.m */; };
+		E3499F1A19A8DE6100890045 /* bluetooth-b.png in Resources */ = {isa = PBXBuildFile; fileRef = E3499F1819A8DE6100890045 /* bluetooth-b.png */; };
+		E3499F1B19A8DE6100890045 /* bluetooth-g.png in Resources */ = {isa = PBXBuildFile; fileRef = E3499F1919A8DE6100890045 /* bluetooth-g.png */; };
+		E3499F1E19A8E74100890045 /* dslr-click.wav in Resources */ = {isa = PBXBuildFile; fileRef = E3499F1D19A8E74100890045 /* dslr-click.wav */; };
 		E35B777F197EC5E6005813EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35B777E197EC5E6005813EA /* Foundation.framework */; };
-		E3794CEE198185D10078170A /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E3794CE9198185D10078170A /* BLEUtility.m */; };
-		E3794CF0198185D10078170A /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = E3794CED198185D10078170A /* Sensors.m */; };
+		E3696BB819AB320500C6CA1D /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3696BB719AB320500C6CA1D /* AVCamPreviewView.m */; };
 		E3794CF2198290E80078170A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3794CF1198290E80078170A /* CoreBluetooth.framework */; };
-		E3794CF5198568320078170A /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E3794CF4198568320078170A /* BLEDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,25 +38,24 @@
 		64195D9788384458BDE5FFB3 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BD5217CE7C04FA6AB64892C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3A62CB7CB642ADB6867263 /* bleCam-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "bleCam-Info.plist"; sourceTree = "<group>"; };
+		917801CA8565404FBE446505 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		92A2CF0B185B4640AE214723 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2F07EC822AC4515AF3AD26B /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F9A039646417280113EA3 /* bcaAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = bcaAppDelegate.m; sourceTree = "<group>"; };
 		C731F61E30184ECCA66B633B /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
 		CFF30F870C844AF4B5EDDB53 /* bleCam-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "bleCam-Prefix.pch"; sourceTree = "<group>"; };
 		DCFB3CC125A14F00BE46179E /* bleCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bleCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B16CAFA8C449799F843133 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31378B4197ECA4F00897C83 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E32BC3E319785A0D00F95449 /* MainStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainStoryboardViewController.h; path = ../Controllers/MainStoryboardViewController.h; sourceTree = "<group>"; };
-		E32BC3E419785A0D00F95449 /* MainStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainStoryboardViewController.m; path = ../Controllers/MainStoryboardViewController.m; sourceTree = "<group>"; };
 		E344D7ED198EC27D00D2944D /* deviceSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceSelectorViewController.h; sourceTree = "<group>"; };
 		E344D7EE198EC27D00D2944D /* deviceSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceSelectorViewController.m; sourceTree = "<group>"; };
+		E3499F1819A8DE6100890045 /* bluetooth-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bluetooth-b.png"; path = "Images/bluetooth-b.png"; sourceTree = "<group>"; };
+		E3499F1919A8DE6100890045 /* bluetooth-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bluetooth-g.png"; path = "Images/bluetooth-g.png"; sourceTree = "<group>"; };
+		E3499F1D19A8E74100890045 /* dslr-click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dslr-click.wav"; path = "Sounds/dslr-click.wav"; sourceTree = "<group>"; };
 		E35B777E197EC5E6005813EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E3794CE8198185D10078170A /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
-		E3794CE9198185D10078170A /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
-		E3794CEC198185D10078170A /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensors.h; sourceTree = "<group>"; };
-		E3794CED198185D10078170A /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensors.m; sourceTree = "<group>"; };
+		E3696BB619AB320500C6CA1D /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
+		E3696BB719AB320500C6CA1D /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
 		E3794CF1198290E80078170A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		E3794CF3198568320078170A /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
-		E3794CF4198568320078170A /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +107,8 @@
 		19C3E9D5AA41416389604AEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3696BB619AB320500C6CA1D /* AVCamPreviewView.h */,
+				E3696BB719AB320500C6CA1D /* AVCamPreviewView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,12 +149,6 @@
 		4BD68DF052224CE0B6E83CDF /* Other-Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E3794CF3198568320078170A /* BLEDevice.h */,
-				E3794CF4198568320078170A /* BLEDevice.m */,
-				E3794CE8198185D10078170A /* BLEUtility.h */,
-				E3794CE9198185D10078170A /* BLEUtility.m */,
-				E3794CEC198185D10078170A /* Sensors.h */,
-				E3794CED198185D10078170A /* Sensors.m */,
 				8E3A62CB7CB642ADB6867263 /* bleCam-Info.plist */,
 				CFF30F870C844AF4B5EDDB53 /* bleCam-Prefix.pch */,
 				64195D9788384458BDE5FFB3 /* main.m */,
@@ -169,6 +164,7 @@
 				68533421193E4D9391E401B1 /* Frameworks */,
 				3AB680F530F243F8BF0B4028 /* Products */,
 				C731F61E30184ECCA66B633B /* Pods-unit_tests.xcconfig */,
+				917801CA8565404FBE446505 /* Pods.xcconfig */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -189,6 +185,7 @@
 			children = (
 				1CD028FEB4AA49958C8E3858 /* iOS */,
 				B2F07EC822AC4515AF3AD26B /* libPods-unit_tests.a */,
+				E2B16CAFA8C449799F843133 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				E344D7EC198EC16600D2944D /* deviceSelectorViewController */,
-				E32BC3E719785ACF00F95449 /* mainViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -248,21 +244,14 @@
 		D5B21305FBDF458081379BF4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E3499F1C19A8E6E400890045 /* Sounds */,
+				E3499F1719A8DDFE00890045 /* Images */,
 				92A2CF0B185B4640AE214723 /* Images.xcassets */,
 				45C5E2631F7C41C59F787505 /* Storyboards */,
 				B20FE2117D6248E681D09983 /* Nibs */,
 				4BD68DF052224CE0B6E83CDF /* Other-Sources */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		E32BC3E719785ACF00F95449 /* mainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E32BC3E319785A0D00F95449 /* MainStoryboardViewController.h */,
-				E32BC3E419785A0D00F95449 /* MainStoryboardViewController.m */,
-			);
-			name = mainViewController;
 			sourceTree = "<group>";
 		};
 		E344D7EC198EC16600D2944D /* deviceSelectorViewController */ = {
@@ -272,6 +261,23 @@
 				E344D7EE198EC27D00D2944D /* deviceSelectorViewController.m */,
 			);
 			name = deviceSelectorViewController;
+			sourceTree = "<group>";
+		};
+		E3499F1719A8DDFE00890045 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E3499F1819A8DE6100890045 /* bluetooth-b.png */,
+				E3499F1919A8DE6100890045 /* bluetooth-g.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E3499F1C19A8E6E400890045 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E3499F1D19A8E74100890045 /* dslr-click.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		E36D5B690C1C461CBB4B0728 /* Controllers */ = {
@@ -297,10 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F1ACDE051134289804F5363 /* Build configuration list for PBXNativeTarget "bleCam" */;
 			buildPhases = (
+				E0626C45D9F34F0DADC25BA1 /* Check Pods Manifest.lock */,
 				059A44A5198348ACB9A9BC2F /* Sources */,
 				2474115EAA8F409081CD2594 /* Frameworks */,
 				8117087AE5B6413299E3F843 /* Resources */,
 				0E1A914C05404E0C9944F01E /* Warn for TODO and FIXME comments */,
+				476413409A76454DBF496EAC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,8 +377,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3499F1B19A8DE6100890045 /* bluetooth-g.png in Resources */,
+				E3499F1E19A8E74100890045 /* dslr-click.wav in Resources */,
 				E31378B5197ECA4F00897C83 /* MainStoryboard.storyboard in Resources */,
 				35171AEAA1544BF3B2920CB7 /* Images.xcassets in Resources */,
+				E3499F1A19A8DE6100890045 /* bluetooth-b.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +408,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		476413409A76454DBF496EAC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		93C7EA20A5384E75A154B92B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -428,6 +454,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-unit_tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E0626C45D9F34F0DADC25BA1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -435,13 +476,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32BC3E519785A0D00F95449 /* MainStoryboardViewController.m in Sources */,
 				9AA5C88EB3924EBAA796EFE3 /* bcaAppDelegate.m in Sources */,
-				E3794CEE198185D10078170A /* BLEUtility.m in Sources */,
+				E3696BB819AB320500C6CA1D /* AVCamPreviewView.m in Sources */,
 				E344D7EF198EC27D00D2944D /* deviceSelectorViewController.m in Sources */,
-				E3794CF5198568320078170A /* BLEDevice.m in Sources */,
 				E0B3A64655A24F3A8F86B3DA /* main.m in Sources */,
-				E3794CF0198185D10078170A /* Sensors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +645,7 @@
 		};
 		B3739D73D9C64F26AE057D8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917801CA8565404FBE446505 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -637,6 +676,7 @@
 		};
 		DF760CE25319499A91669894 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917801CA8565404FBE446505 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
