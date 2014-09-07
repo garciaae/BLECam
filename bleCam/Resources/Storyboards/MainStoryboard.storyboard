@@ -16,17 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-3W-Uln" customClass="AVCamPreviewView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-sB-RlD">
+                                <rect key="frame" x="222" y="515" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rotate.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="frontRearCam:" destination="iTE-Ph-7CJ" eventType="touchUpInside" id="Kk9-1u-Ci5"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-g.png" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-HS-Euq">
-                                <rect key="frame" x="11" y="535" width="24" height="24"/>
+                                <rect key="frame" x="10" y="525" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-RI-lVG">
-                                <rect key="frame" x="43" y="532" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-RI-lVG">
+                                <rect key="frame" x="82" y="515" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="zvd-A4-oTi"/>
-                                </constraints>
-                                <state key="normal" title="Capture">
+                                <state key="normal" image="iphone-44.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -34,37 +46,15 @@
                                     <action selector="useCamera:" destination="iTE-Ph-7CJ" eventType="touchUpInside" id="Vap-YE-azJ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-3W-Uln" customClass="AVCamPreviewView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="527"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-sB-RlD">
-                                <rect key="frame" x="238" y="532" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="0TT-44-U7f"/>
-                                </constraints>
-                                <state key="normal" title="F/R Cam">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="frontRearCam:" destination="iTE-Ph-7CJ" eventType="touchUpInside" id="Kk9-1u-Ci5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ib3-HS-Euq" firstAttribute="leading" secondItem="dFz-DT-rzD" secondAttribute="leading" constant="11" id="9No-PD-CQ0"/>
-                            <constraint firstItem="u7K-3W-Uln" firstAttribute="leading" secondItem="dFz-DT-rzD" secondAttribute="leading" id="BEh-c6-I1O"/>
-                            <constraint firstAttribute="trailing" secondItem="u7K-3W-Uln" secondAttribute="trailing" id="D92-Id-4o3"/>
-                            <constraint firstItem="WA3-sB-RlD" firstAttribute="centerY" secondItem="ib3-HS-Euq" secondAttribute="centerY" id="J8o-OH-w0Y"/>
-                            <constraint firstAttribute="bottom" secondItem="u7K-3W-Uln" secondAttribute="bottom" constant="41" id="Ky1-At-g2J"/>
-                            <constraint firstItem="WA3-sB-RlD" firstAttribute="baseline" secondItem="EVK-RI-lVG" secondAttribute="baseline" id="WnU-EC-D3t"/>
-                            <constraint firstItem="u7K-3W-Uln" firstAttribute="top" secondItem="PQ4-Sl-nHW" secondAttribute="bottom" constant="-64" id="YeN-Fd-lcF"/>
-                            <constraint firstAttribute="trailing" secondItem="WA3-sB-RlD" secondAttribute="trailing" constant="20" symbolic="YES" id="Z1X-i6-fii"/>
-                            <constraint firstItem="aIU-LH-9fO" firstAttribute="top" secondItem="ib3-HS-Euq" secondAttribute="bottom" constant="9" id="sUW-gZ-bwb"/>
-                            <constraint firstItem="EVK-RI-lVG" firstAttribute="leading" secondItem="ib3-HS-Euq" secondAttribute="trailing" constant="8" symbolic="YES" id="zC5-6R-Utn"/>
+                            <constraint firstItem="EVK-RI-lVG" firstAttribute="centerY" secondItem="ib3-HS-Euq" secondAttribute="centerY" id="DrR-Hw-42N"/>
+                            <constraint firstItem="ib3-HS-Euq" firstAttribute="leading" secondItem="dFz-DT-rzD" secondAttribute="leading" constant="10" id="HGE-jx-caS"/>
+                            <constraint firstItem="WA3-sB-RlD" firstAttribute="top" secondItem="EVK-RI-lVG" secondAttribute="top" id="Juz-yu-yEu"/>
+                            <constraint firstItem="WA3-sB-RlD" firstAttribute="leading" secondItem="EVK-RI-lVG" secondAttribute="trailing" constant="96" id="TiY-pH-hPS"/>
+                            <constraint firstItem="aIU-LH-9fO" firstAttribute="top" secondItem="EVK-RI-lVG" secondAttribute="bottom" constant="9" id="bRD-cB-vES"/>
+                            <constraint firstItem="EVK-RI-lVG" firstAttribute="leading" secondItem="ib3-HS-Euq" secondAttribute="trailing" constant="48" id="i6p-9x-XaR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kvT-p0-OkC"/>
@@ -101,6 +91,8 @@
     </scenes>
     <resources>
         <image name="bluetooth-g.png" width="24" height="24"/>
+        <image name="iphone-44.png" width="44" height="44"/>
+        <image name="rotate.png" width="44" height="44"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

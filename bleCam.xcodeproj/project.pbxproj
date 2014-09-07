@@ -19,6 +19,8 @@
 		E35B777F197EC5E6005813EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35B777E197EC5E6005813EA /* Foundation.framework */; };
 		E3696BB819AB320500C6CA1D /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3696BB719AB320500C6CA1D /* AVCamPreviewView.m */; };
 		E3794CF2198290E80078170A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3794CF1198290E80078170A /* CoreBluetooth.framework */; };
+		E3F8CA9419BCB70200AE7B43 /* iphone-44.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F8CA9319BCB70200AE7B43 /* iphone-44.png */; };
+		E3F8CA9619BCB9F200AE7B43 /* rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F8CA9519BCB9F200AE7B43 /* rotate.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		E3696BB619AB320500C6CA1D /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
 		E3696BB719AB320500C6CA1D /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
 		E3794CF1198290E80078170A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E3F8CA9319BCB70200AE7B43 /* iphone-44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-44.png"; path = "Images/iphone-44.png"; sourceTree = "<group>"; };
+		E3F8CA9519BCB9F200AE7B43 /* rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rotate.png; path = Images/rotate.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +270,8 @@
 		E3499F1719A8DDFE00890045 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E3F8CA9519BCB9F200AE7B43 /* rotate.png */,
+				E3F8CA9319BCB70200AE7B43 /* iphone-44.png */,
 				E3499F1819A8DE6100890045 /* bluetooth-b.png */,
 				E3499F1919A8DE6100890045 /* bluetooth-g.png */,
 			);
@@ -377,8 +383,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F8CA9619BCB9F200AE7B43 /* rotate.png in Resources */,
 				E3499F1B19A8DE6100890045 /* bluetooth-g.png in Resources */,
 				E3499F1E19A8E74100890045 /* dslr-click.wav in Resources */,
+				E3F8CA9419BCB70200AE7B43 /* iphone-44.png in Resources */,
 				E31378B5197ECA4F00897C83 /* MainStoryboard.storyboard in Resources */,
 				35171AEAA1544BF3B2920CB7 /* Images.xcassets in Resources */,
 				E3499F1A19A8DE6100890045 /* bluetooth-b.png in Resources */,
