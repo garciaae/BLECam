@@ -10,8 +10,8 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <AVFoundation/AVFoundation.h>
 #import "AVCamPreviewView.h"
-//#import "BLEDevice.h"
-//#import "BLEUtility.h"
+
+// Hola mundo
 
 static void * CapturingStillImageContext = &CapturingStillImageContext;
 static void * RecordingContext = &RecordingContext;
@@ -49,6 +49,8 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 // A button to switch between front and rear cameras
 - (IBAction)frontRearCam:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *changeCamera;
+
+@property int patata;
 
 // Session management.
 @property (nonatomic) dispatch_queue_t sessionQueue; // Communicate with the session and other session objects on this queue.
